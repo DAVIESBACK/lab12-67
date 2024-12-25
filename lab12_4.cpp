@@ -1,7 +1,8 @@
 #include<iostream>
 
 using namespace std;
-
+template<typename RO89>
+void mySwap(RO89 &,RO89 &);
 int main(){
 	int x, y;
 	string a, b;
@@ -30,3 +31,9 @@ int main(){
 	return 0;
 }
 
+template<typename RO89>
+void mySwap(RO89 & a, RO89 & b){
+	RO89 swap = a;
+	a = b;
+	b = swap;
+}
